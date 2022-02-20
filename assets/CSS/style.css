@@ -117,9 +117,8 @@ header nav ul li a:hover {
     font-size: 48px;
     color: var(--secondary-color);
     border-right: 5px solid;
-    width: 15%;
     text-align: right;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-left: 5px;
   }
 
@@ -134,16 +133,20 @@ header nav ul li a:hover {
   /* Intro Style Start */
   .intro {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 30px
   }
 
   .intro p {
     line-height: 1.7;
     color: var(--tertiary-color);
-    width: 80%;
+    width: 90%;
     font-size: 20px;
     margin: 0 auto;
+  }
+
+  .cont-para {
+      width: 60%;
   }
 
   /* Footer Styles */
@@ -175,3 +178,27 @@ header nav ul li a:hover {
   .flex-row {
    width: 70%
   }
+
+  /* Media Query For Smaller Desktop Screens and Smaller */
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 20px;
+    }
+    .intro {
+        flex-wrap: wrap;
+
+    }
+}
+
+  /* Media Query For Tablets and Smaller */
+@media screen and (max-width: 768px) {
+.intro {
+        
+        
+    }
+}
+
+/* Media Query For Mobile Phones And Smaller */
+@media screen and (max-width: 575px) {
+
+}
