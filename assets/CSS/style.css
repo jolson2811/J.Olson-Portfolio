@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #495c3f;
+    --secondary-color: #eeeeee;
+    --tertiary-color: #777575;
+    --quaternary-color: #1d1d1c;
+}
+
+body {
+    background-color: var(--quaternary-color);
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header Styles */
+header {
+    padding: 20px 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 .Olson {
+    color: var(--tertiary-color);
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    display: flex;
+    margin-left: 25px;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.30vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+
+/* Hero Styles */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/Background Hero.jpg");
+    /* "C:\Users\jolso\Desktop\projects\J.Olson-Portfolio\assets\Images\Salt Flats.jpg" */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.hero-profile img {
+    width: 25%;
+    height: 80%;
+    float: left;
+  }
+
+  /* Footer Styles */
+  footer {
+    background: var(--primary-color);
+    width: 100%;
+    padding: 40px 35px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  footer h4 {
+    color: var(--secondary-color);
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+  }
