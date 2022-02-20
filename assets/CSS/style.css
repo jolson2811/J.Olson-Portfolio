@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--quaternary-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
@@ -93,25 +94,22 @@ header nav ul li a:hover {
     margin-bottom: 25px;
     background-image: url("../images/Background Hero4.jpg");
     background-size: cover;
-    flex-wrap: wrap;
-    padding-right: 25px;
-    padding-bottom: 15px;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.hero-profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 25%;
-
-  }
+.hero h2 {
+    color: var(--secondary-color);
+    font-size: 60px;
+    opacity: .9;
+}
 
   /* Section Style Start */
   .section-title {
-    font-size: 48px;
+    font-size: 30px;
+    opacity: .9;
     color: var(--secondary-color);
     border-right: 5px solid;
     text-align: right;
@@ -148,6 +146,12 @@ header nav ul li a:hover {
   .cont-para {
       width: 60%;
       padding: 10px 30px 10px 30px;
+  }
+  .cont-para img {
+    float: left;
+    width: 215px;
+    height: auto;
+    margin-right: 30px;
   }
 
   /* Work Styles */
@@ -233,7 +237,22 @@ header nav ul li a:hover {
     color: var(--secondary-color);
     padding: 5px;
   }
-
+  /* Contact Me Styles */
+  .contact{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+  }
+  .contact-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+  .contact-info a{
+      color: var(--tertiary-color);
+      font-size: 25px;
+  }
   /* Footer Styles */
   footer {
     background: var(--primary-color);
@@ -272,6 +291,9 @@ header nav ul li a:hover {
     .work-cont{
         flex-wrap: wrap;
     }
+    .contact, .contact-info{
+        flex-wrap: wrap;
+    }
 }
 
   /* Media Query For Tablets and Smaller */
@@ -279,14 +301,26 @@ header nav ul li a:hover {
     .inner-column-left, .inner-column-right, .inner-application{
         width: 100%;
     }
+    .inner-column-left, .inner-column-right{
+        height: 50%;
+    }
     .inner-column-right{
         align-items: flex-start;
+    }
+    .application{
+        height: 200px;
+    }
+    .inner-applications{
+        height: 650px;
     }
 }
 
 /* Media Query For Mobile Phones And Smaller */
 @media screen and (max-width: 575px) {
     .app-title {
+        width: 100%;
+    }
+    .applications{
         width: 100%;
     }
 }
