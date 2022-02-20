@@ -244,14 +244,24 @@ header nav ul li a:hover {
         flex-wrap: wrap;
 
     }
+    .work-cont{
+        flex-wrap: wrap;
+    }
 }
 
   /* Media Query For Tablets and Smaller */
 @media screen and (max-width: 768px) {
-
+    .inner-column-left, .inner-column-right, .inner-application{
+        width: 100%;
+    }
+    .inner-column-right{
+        align-items: flex-start;
+    }
 }
 
 /* Media Query For Mobile Phones And Smaller */
 @media screen and (max-width: 575px) {
-
+    .app-title {
+        width: 100%;
+    }
 }
