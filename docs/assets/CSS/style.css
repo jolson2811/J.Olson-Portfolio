@@ -92,7 +92,7 @@ header nav ul li a:hover {
   height: 400px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/Background Hero3.jpg");
+  background-image: url("../Images/Background\ Hero3.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -200,7 +200,7 @@ header nav ul li a:hover {
   border: 5px solid var(--primary-color);
 }
 #run-buddy{
-  background-image: url("../images/run-buddy.png");
+  background-image: url("../Images/run-buddy.png");
   background-size: cover;
 }
 .inner-application{
@@ -211,7 +211,7 @@ header nav ul li a:hover {
   border: 5px solid var(--primary-color);
 }
 #led-wall{
-  background-image: url("../images/led-wall.jpg");
+  background-image: url("../Images/led-wall.jpg");
   background-size: cover;
 }
 #puzzle{
