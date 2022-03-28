@@ -214,8 +214,8 @@ header nav ul li a:hover {
   background-image: url("../Images/ledWall.jpg");
   background-size: cover;
 }
-#puzzle{
-    background-image: url("../Images/puzzle.jpg");
+#urban{
+    background-image: url("../Images/urban.png");
     background-size: cover;
 }
 #calculator{
